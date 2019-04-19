@@ -1,0 +1,50 @@
+#include<stdio.h>                                   //подключение бибилиотеки
+#include<math.h>
+main() {
+    float a, b, c = 1, otvet;                         //объявляем, что переменные будут для вещественных чисел
+    int uslovie;                                          //объявляем, что переменная будет целого типа
+
+
+    int e = 1;
+    while (e == 1) {                                      //объявляем цикл
+        printf("vvedite 2 chisla\n");
+        scanf("%f%f", &a, &b);
+        printf("slojenie 1\n");
+        printf("raznost 2\n");
+        printf("umnojenie 3\n");
+        printf("delenie 4\n");
+        printf("vozvedenie v stepen(a^b) 5\n");
+        printf("faktorial ot 1 chisla 6\n");
+        printf("vvedite nomer operacii\n");
+        scanf("%d", &uslovie);
+        if (uslovie==1) {
+            printf("otvet %f\n", a + b);
+        }
+        if (uslovie==2) {
+            printf("otvet %f\n", a - b);
+        }
+        if (uslovie==3) {
+            printf("otvet %f\n", a * b);
+        }
+        if (uslovie==4) {
+            printf("otvet %f\n", a / b);
+        }
+        if (uslovie==5) {
+            otvet = pow(a, b);                                                   //функция возведения числа в степень
+            printf("otvet %f\n", otvet);
+        }
+        if (uslovie==6) {
+            while (a != 0)
+            {
+                c = c * a;
+                a = a - 1;
+                if (a==0)
+                {
+                    printf("otvet %f\n", c);
+                }
+            }
+        }
+        printf("dlya restarta vvedite 1, dlya vihoda luboe drugoe chislo");
+        scanf("%d", &e);
+    }
+}
