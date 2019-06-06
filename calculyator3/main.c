@@ -1,3 +1,15 @@
+/* 
+============================================================================ 
+Name : Calculator3.c 
+Author : Rudchenko Daria
+Version : 
+Copyright : free
+Description : Calculator3 in C
+============================================================================ 
+*/
+
+
+
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
